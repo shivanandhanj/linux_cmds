@@ -1,0 +1,66 @@
+level 1 pw: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+level 2 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+level 3 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+level 4 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+level 5 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+level 6 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+7 morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+8 dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc   sort data.txt | uniq -c |grep ' *1 '
+
+9 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM strings data.txt | grep '^=='
+10 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey cat data.txt | base64 -d
+
+11 dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+12 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4 
+file compression :
+1. gzip , data.gz then gunzip data.gz
+2. bip2 , data.bz2 then bunzip data.bz2
+3. tar, data.tar then tar -xf data.tar
+xxd for hexadecimal conversion , -r revers hex to binary 
+13. FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+chmod 600 sshkey.private
+shiva@shiva-HP-Laptop-15s-fq5xxx:~$ ssh -i sshkey.private -p 2220 bandit14@bandit.labs.overthewire.org
+14 MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS  - nc localhost 30000
+followed by password
+
+15 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo - openssl s_client -connect localhost:30001
+
+
+16 kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+
+
+31518
+31790
+31691
+31046
+31960
+
+scp -P 2220 bandit16@bandit.labs.overthewire.org:/tmp/bandit17key .
+ to cpy the private key to local comp from bandit16/tmp
+
+shiva@shiva-HP-Laptop-15s-fq5xxx:~$ chmod 600 bandit17key
+shiva@shiva-HP-Laptop-15s-fq5xxx:~$ ssh -i bandit17key -p 2220 bandit17@bandit.labs.overthewire.org
+                     
+
+17 x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+
+cut -d' ' -f2
+ diff passwords.old passwords.new | grep '^>'| awk '{print $2}'
+
+
+18  x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+19 cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+./bandit20-do cat /etc/bandit_pass/bandit20
+20 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+terminal 1 bandit20@bandit:~$ nc -lv 4444
+Listening on 0.0.0.0 4444
+Connection received on localhost 46878
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
+terminal 2 
+bandit20@bandit:~$ ./suconnect 4444
+Read: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+Password matches, sending next password
+
+21 EeoULMCra2q0dSkYj561DX7s1CpBuOBt
