@@ -63,4 +63,30 @@ bandit20@bandit:~$ ./suconnect 4444
 Read: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
 Password matches, sending next password
 
+ls -l suconnect  out rwsr-x--- 1 bandit21 bandit20 15608 Oct 14 09:26 suconnect it means succonect runs as bandit21 though in bandit20, it is SUID program
+
+
 21 EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+go to /etc/cron.d
+cat cronjob_bandit23
+@reboot bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+* * * * * bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+
+cat /usr/bin/cronjob_bandit22.sh
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+bandit21@bandit:/etc/cron.d$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+
+22 tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+bandit22@bandit:/etc/cron.d$ echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+8ca319486bfbbc3663ea0fbe81326349
+bandit22@bandit:/etc/cron.d$ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+
+
+23 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga 
+
+
+24 gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
